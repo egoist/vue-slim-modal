@@ -17,7 +17,7 @@
     "build": "bili",
     "example": "vbuild --dev --config vue.config.example.js",
     "example:build": "vbuild --config vue.config.example.js",
-    "gh": "npm run example:build && gh-pages -d dist"
+    "gh": "npm run example:build && gh-pages -d dist-example"
   },
   "files": [
     "dist"
