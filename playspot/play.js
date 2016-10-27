@@ -1,4 +1,4 @@
-import {play, useComponents} from 'vue-play'
+import {Play} from 'vue-play'
 import 'vue-play/dist/vue-play.css'
 
 // load example components
@@ -10,15 +10,17 @@ import centered from './components/centered.vue'
 import basicExample from 'raw!./code/basic.html'
 import clickOutsideExample from 'raw!./code/click-outside.html'
 import centeredExample from 'raw!./code/centered.html'
+console.log(Play);
+const play = new Play()
 
 // regisrer the component to play
 import SlimModal from '../src'
-useComponents({
+play.useComponents({
   SlimModal
 })
 
 // play components
-play({
+play.start({
   SlimModal: {
     'Basic': {
       ...basic,

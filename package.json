@@ -42,7 +42,7 @@
     "raw-loader": "^0.5.1",
     "rollup-plugin-babel": "^2.6.1",
     "vbuild": "^3.0.0",
-    "vue-play": "^0.3.0"
+    "vue-play": "^1.0.1"
   },
   "eslintConfig": {
     "extends": "egoist/esnext",

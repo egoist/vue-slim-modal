@@ -6083,9 +6083,9 @@ vue-loader@^9.5.3:
     vue-template-compiler "^2.0.0-rc.3"
     vue-template-es2015-compiler "^1.0.0"
 
-vue-play:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/vue-play/-/vue-play-0.3.0.tgz#9fdfb55121c1d9a07fbd7250a664d430e4a17cac"
+vue-play@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vue-play/-/vue-play-1.0.1.tgz#89035a4d7e6336a53d3a970dd9047d275708d00b"
   dependencies:
     uid "0.0.2"
     eva.js "^1.0.0"
