@@ -1,8 +1,6 @@
 const Vue = require('vue')
 const SlimModal = require('../dist/vue-slim-modal.common.js')
 
-jest.useFakeTimers()
-
 test('basic', () => {
   const vm = new Vue({
     render: h => (
