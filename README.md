@@ -36,8 +36,8 @@ For more examples please [visit the demo](https://egoistian.com/vue-slim-modal).
 ### Development
 
 ```bash
-# to develop
-npm run example
+# to develop with vue-play
+npm run play
 
 # to publish
 npm run build
