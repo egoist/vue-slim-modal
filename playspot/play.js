@@ -10,7 +10,7 @@ import centered from './components/centered.vue'
 import basicExample from 'raw!./code/basic.html'
 import clickOutsideExample from 'raw!./code/click-outside.html'
 import centeredExample from 'raw!./code/centered.html'
-console.log(Play);
+
 const play = new Play()
 
 // regisrer the component to play
