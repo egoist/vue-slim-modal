@@ -26,7 +26,7 @@ export default {
       defaultStyles.content,
       {
         top: '50%',
-        transform: 'translateX(-50%) translateY(-50%)'
+        transform: transformCenter
       }
     ) : defaultStyles.content
 
@@ -40,6 +40,8 @@ export default {
   }
 }
 
+const transformDefault = 'translateX(-50%)'
+const transformCenter = 'translate(-50%, -50%)'
 const defaultStyles = {
   overlay: {
     position: 'fixed',
@@ -52,7 +54,7 @@ const defaultStyles = {
     position: 'absolute',
     top: '100px',
     left: '50%',
-    transform: 'translateX(-50%) ',
+    transform: transformDefault,
     border: '1px solid #e2e2e2',
     padding: '10px',
     backgroundColor: 'white',

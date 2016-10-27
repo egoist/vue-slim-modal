@@ -4,7 +4,7 @@
 
 ## Features
 
-- Totally functional component
+- Totally functional component and tested
 - Minimal design, how to style is up to you!
 - Light-weight, 1KB JS file and that's all!
 
