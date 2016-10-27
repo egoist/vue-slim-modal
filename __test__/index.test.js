@@ -44,5 +44,5 @@ test('centered modal', () => {
   const {style} = vm.$el.querySelector('.modal3')
   expect(style.top).toBe('50%')
   // bug: seems jsdom cannot read transform
-  // expect(style.transform).toBe('translate(-50%, 50%)')
+  // expect(style.transform).toBe('translate(-50%, -50%)')
 })
