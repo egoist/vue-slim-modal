@@ -54,6 +54,7 @@ const defaultStyles = {
     position: 'absolute',
     top: '100px',
     left: '50%',
+    maxWidth: '80%',
     transform: transformDefault,
     border: '1px solid #e2e2e2',
     padding: '10px',
