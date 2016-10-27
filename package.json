@@ -14,6 +14,7 @@
   },
   "scripts": {
     "test": "npm run build:cjs && jest && eslint src/*.js",
+    "prepublish": "npm run build",
     "build": "bili --compress",
     "build:cjs": "bili --format cjs",
     "watch": "bili --format cjs --watch",
