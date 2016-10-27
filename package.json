@@ -18,9 +18,9 @@
     "build": "bili --compress",
     "build:cjs": "bili --format cjs",
     "watch": "bili --format cjs --watch",
-    "example": "vbuild --dev --config vue.config.example.js",
-    "example:build": "vbuild --config vue.config.example.js",
-    "gh": "npm run example:build && gh-pages -d dist-example"
+    "play": "vbuild --dev --config vue.config.play.js",
+    "play:build": "vbuild --config vue.config.play.js",
+    "gh": "npm run play:build && gh-pages -d dist-play"
   },
   "files": [
     "dist"
@@ -42,7 +42,7 @@
     "raw-loader": "^0.5.1",
     "rollup-plugin-babel": "^2.6.1",
     "vbuild": "^3.0.0",
-    "vue": "^2.0.3"
+    "vue-play": "^0.3.0"
   },
   "eslintConfig": {
     "extends": "egoist/esnext",

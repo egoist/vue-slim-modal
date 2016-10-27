@@ -1,0 +1,8 @@
+<slim-modal :class="'click-outside'"
+  :is-open="isOpen"
+  :click-outside="closeOnClickOutside">
+  <h2>close on click outside the modal</h2>
+  <p>
+    <button @click="hideModal">close</button>
+  </p>
+</slim-modal>
