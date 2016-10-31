@@ -15,10 +15,21 @@ export default {
     isCenter: {
       type: Boolean,
       default: false
+    },
+    overlayStyle: {
+      type: Object
+    },
+    overlayClass: {
+      type: String
     }
   },
   render(h, ctx) {
-    const {isOpen, isCenter, clickOutside} = ctx.props
+    const {
+      isOpen,
+      isCenter,
+      clickOutside,
+      overlayClass
+    } = ctx.props
     if (!isOpen) return h()
 
     const contentStyles = isCenter ? assign(
@@ -30,8 +41,14 @@ export default {
       }
     ) : defaultStyles.content
 
+    const overlayStyle = assign(
+      {},
+      defaultStyles.overlay,
+      ctx.props.overlayStyle
+    )
+
     return (
-      <div style={defaultStyles.overlay} on-click={clickOutside}>
+      <div style={overlayStyle} class={overlayClass} on-click={clickOutside}>
         <div style={contentStyles} on-click={e => e.stopPropagation()} {...ctx.data}>
           {ctx.children}
         </div>
