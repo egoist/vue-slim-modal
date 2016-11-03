@@ -41,7 +41,6 @@
     "jest-cli": "^15.1.1",
     "raw-loader": "^0.5.1",
     "rollup-plugin-babel": "^2.6.1",
-    "vbuild": "^3.0.0",
     "vue-play": "^2.0.0-rc.3"
   },
   "eslintConfig": {
