@@ -1,5 +1,4 @@
-import {Play} from 'vue-play'
-import 'vue-play/dist/vue-play.css'
+import {play} from 'vue-play'
 
 // load example components
 import basic from './components/basic.vue'
@@ -11,28 +10,22 @@ import basicExample from 'raw!./code/basic.html'
 import clickOutsideExample from 'raw!./code/click-outside.html'
 import centeredExample from 'raw!./code/centered.html'
 
-const play = new Play()
-
 // regisrer the component to play
 import SlimModal from '../src'
-play.useComponents({
+module.exports.components = {
   SlimModal
-})
+}
 
-// play components
-play.start({
-  SlimModal: {
-    'Basic': {
-      ...basic,
-      example: basicExample
-    },
-    'Close on click outside': {
-      ...clickOutside,
-      example: clickOutsideExample
-    },
-    'Centered': {
-      ...centered,
-      example: centeredExample
-    }
-  }
-})
+play('SlimModal', module)
+  .add('Basic', {
+    ...basic,
+    example: basicExample
+  })
+  .add('Close on click outside', {
+    ...clickOutside,
+    example: clickOutsideExample
+  })
+  .add('Centered', {
+    ...centered,
+    example: centeredExample
+  })

@@ -15,7 +15,7 @@
 </template>
 
 <script>
-  import base from './base'
+  import base from './base.vue'
   export default {
     extends: base,
     methods: {

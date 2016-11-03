@@ -174,7 +174,7 @@ array-equal@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/array-equal/-/array-equal-1.0.0.tgz#8c2a5ef2472fd9ea742b04c77a75093ba2757c93"
 
-array-find-index@^1.0.1:
+array-find-index@^1.0.1, array-find-index@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/array-find-index/-/array-find-index-1.0.2.tgz#df010aa1287e164bbda6f9723b0a96a1ec4187a1"
 
@@ -2165,16 +2165,6 @@ esutils@^2.0.2:
 etag@~1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.7.0.tgz#03d30b5f67dd6e632d2945d30d6652731a34d5d8"
-
-eva.js@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/eva.js/-/eva.js-1.1.0.tgz#5c5f072914b7079bdebc3b6a2cdc43f120bbcc33"
-  dependencies:
-    object-assign "^4.1.0"
-    vue "^2.0.1"
-    vue-router "^2.0.0"
-    vuex "^2.0.0"
-    vuex-router-sync "^3.0.0"
 
 event-emitter@~0.3.4:
   version "0.3.4"
@@ -4905,7 +4895,7 @@ qs@6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.2.0.tgz#3b7848c03c2dece69a9522b0fae8c4126d745f3b"
 
-query-string@^4.1.0:
+query-string@^4.1.0, query-string@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-4.2.3.tgz#9f27273d207a25a8ee4c7b8c74dcd45d556db822"
   dependencies:
@@ -6083,17 +6073,30 @@ vue-loader@^9.5.3:
     vue-template-compiler "^2.0.0-rc.3"
     vue-template-es2015-compiler "^1.0.0"
 
-vue-play@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/vue-play/-/vue-play-1.0.1.tgz#89035a4d7e6336a53d3a970dd9047d275708d00b"
+vue-play@^2.0.0-rc.3:
+  version "2.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/vue-play/-/vue-play-2.0.0-rc.3.tgz#9e04b01ca8bf8b7821684840380a5a2873df1df7"
   dependencies:
     uid "0.0.2"
-    eva.js "^1.0.0"
+    array-find-index "^1.0.2"
     highlight.js "^9.7.0"
+    query-string "^4.2.3"
+    vue "^2.0.3"
+    vue-router "^2.0.1"
+    vue-slim-modal "^0.3.0"
+    vuex "^2.0.0"
+    vuex-router-sync next
 
-vue-router@^2.0.0:
+vue-router@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-2.0.1.tgz#88b83cdc9497bad5b20b579e847a7e7240e221dd"
+
+vue-slim-modal@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/vue-slim-modal/-/vue-slim-modal-0.3.0.tgz#e9d84f60956d36a3b2760d5808edb2a9653d1d72"
+  dependencies:
+    babel-helper-vue-jsx-merge-props "^2.0.1"
+    object-assign "^4.1.0"
 
 vue-style-loader@^1.0.0:
   version "1.0.0"
@@ -6112,11 +6115,11 @@ vue-template-es2015-compiler@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.0.0.tgz#89add11c41224059c839ef0b9484e97a7f98abc5"
 
-vue@^2.0.1:
+vue@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.0.3.tgz#3f7698f83d6ad1f0e35955447901672876c63fde"
 
-vuex-router-sync@^3.0.0:
+vuex-router-sync@next:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/vuex-router-sync/-/vuex-router-sync-3.0.0.tgz#3b632baa86cc55192ab408b8d52e6490380df3d7"
 
