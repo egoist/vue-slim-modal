@@ -1,6 +1,7 @@
 # vue-slim-modal
 
-[![NPM version](https://img.shields.io/npm/v/vue-slim-modal.svg?style=flat-square)](https://npmjs.com/package/vue-slim-modal) [![NPM downloads](https://img.shields.io/npm/dm/vue-slim-modal.svg?style=flat-square)](https://npmjs.com/package/vue-slim-modal) [![Build Status](https://img.shields.io/circleci/project/egoist/vue-slim-modal/master.svg?style=flat-square)](https://circleci.com/gh/egoist/vue-slim-modal)
+[![NPM version](https://img.shields.io/npm/v/vue-slim-modal.svg)](https://npmjs.com/package/vue-slim-modal) [![NPM downloads](https://img.shields.io/npm/dm/vue-slim-modal.svg)](https://npmjs.com/package/vue-slim-modal) [![Build Status](https://img.shields.io/circleci/project/egoist/vue-slim-modal/master.svg)](https://circleci.com/gh/egoist/vue-slim-modal) [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
+
 
 ## Features
 
