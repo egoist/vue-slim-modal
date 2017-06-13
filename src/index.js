@@ -1,5 +1,3 @@
-import assign from 'object-assign'
-
 export default {
   name: 'slim-modal',
   functional: true,
@@ -10,73 +8,37 @@ export default {
     },
     clickOutside: {
       type: Function,
-      default: () => () => {}
+      default: () => () => null
     },
     isCenter: {
       type: Boolean,
       default: false
-    },
-    overlayStyle: {
-      type: Object
     },
     overlayClass: {
       type: String
     }
   },
   render(h, ctx) {
-    const {
-      isOpen,
-      isCenter,
-      clickOutside,
-      overlayClass
-    } = ctx.props
-    if (!isOpen) return h()
+    const { isOpen, isCenter, clickOutside, overlayClass } = ctx.props
 
-    const contentStyles = isCenter ? assign(
-      {},
-      defaultStyles.content,
-      {
-        top: '50%',
-        transform: transformCenter
-      }
-    ) : defaultStyles.content
+    if (!isOpen) return
 
-    const overlayStyle = assign(
-      {},
-      defaultStyles.overlay,
-      ctx.props.overlayStyle
-    )
+    const contentClassNames = `modal${isCenter ? ' modal__center' : ''}`
+
+    const overlayClassNames = `modal-overlay${overlayClass
+      ? ` ${overlayClass}`
+      : ''}`
 
     return (
-      <div style={overlayStyle} class={overlayClass} on-click={clickOutside}>
-        <div style={contentStyles} on-click={e => e.stopPropagation()} {...ctx.data}>
+      <div class={overlayClassNames} on-click={clickOutside}>
+        <div
+          class={contentClassNames}
+          on-click={e => e.stopPropagation()}
+          {...ctx.data}
+        >
           {ctx.children}
         </div>
       </div>
     )
-  }
-}
-
-const transformDefault = 'translateX(-50%)'
-const transformCenter = 'translate(-50%, -50%)'
-const defaultStyles = {
-  overlay: {
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    zIndex: 9990
-  },
-  content: {
-    position: 'absolute',
-    top: '100px',
-    left: '50%',
-    maxWidth: '80%',
-    transform: transformDefault,
-    border: '1px solid #e2e2e2',
-    padding: '10px',
-    backgroundColor: 'white',
-    overflow: 'auto'
   }
 }

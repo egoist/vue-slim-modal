@@ -1,0 +1,2 @@
+.modal-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:9990}.modal{position:absolute;top:100px;left:50%;max-width:80%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);border:1px solid #e2e2e2;padding:10px;background-color:#fff;overflow:auto}.modal.modal__center{top:50%;-webkit-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}
+/*# sourceMappingURL=client.dbb2eade.css.map*/

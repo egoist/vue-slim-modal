@@ -13,44 +13,53 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "npm run build:cjs && jest && eslint src/*.js",
+    "test": "xo",
     "prepublish": "npm run build",
-    "build": "bili --compress",
-    "build:cjs": "bili --format cjs",
-    "watch": "bili --format cjs --watch",
-    "play": "vue-play start",
-    "play:build": "vue-play build",
-    "gh": "npm run play:build && gh-pages -d dist-play"
+    "dev": "poi",
+    "build:example": "poi build",
+    "build": "bili --format cjs,umd --compress --module-name SlimModal --banner --js babel",
+    "deploy": "npm run build:example && gh-pages -d example/dist"
+  },
+  "poi": {
+    "entry": "example/index.js",
+    "homepage": "/vue-slim-modal/",
+    "dist": "example/dist"
+  },
+  "babel": {
+    "presets": [
+      [
+        "vue-app",
+        {
+          "useBuiltIns": true
+        }
+      ]
+    ]
   },
   "files": [
-    "dist"
+    "dist",
+    "themes"
   ],
   "main": "dist/vue-slim-modal.common.js",
+  "unpkg": "dist/vue-slim-modal.js",
   "keywords": [
     "modal",
     "vue"
   ],
   "devDependencies": {
     "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-vue-jsx": "^3.1.1",
-    "babel-preset-es2015": "^6.18.0",
-    "bili": "^0.6.3",
-    "eslint": "latest",
-    "eslint-config-egoist": "latest",
-    "gh-pages": "^0.11.0",
-    "jest-cli": "^15.1.1",
+    "babel-plugin-transform-vue-jsx": "^3.4.3",
+    "bili": "^0.16.0-rc.2",
+    "eslint-config-rem": "^3.1.0",
+    "gh-pages": "^1.0.0",
+    "poi": "^9.0.2",
     "raw-loader": "^0.5.1",
-    "rollup-plugin-babel": "^2.6.1",
-    "vue-play": "^2.0.0-rc.3"
+    "rollup-plugin-babel": "^2.7.1",
+    "xo": "^0.18.2"
   },
-  "eslintConfig": {
-    "extends": "egoist/esnext",
-    "rules": {
-      "no-use-before-define": 0
-    }
+  "xo": {
+    "extends": "rem/prettier"
   },
   "dependencies": {
-    "babel-helper-vue-jsx-merge-props": "^2.0.1",
-    "object-assign": "^4.1.0"
+    "babel-helper-vue-jsx-merge-props": "^2.0.1"
   }
 }
