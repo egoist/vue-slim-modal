@@ -102,12 +102,12 @@ Add extra class name to `.modal-overlay` element.
 
 ### Development
 
-```bash
-# to develop with vue-play
-npm run play
+Run the example with [Poi](https://poi.js.org):
 
-# to publish
-npm run build
+```bash
+cd vue-slim-modal
+yarn
+yarn dev
 ```
 
 ## License
