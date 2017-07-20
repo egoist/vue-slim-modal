@@ -31,7 +31,7 @@ export default {
 
     return (
       <div class="modal-wrapper">
-        <div class={overlayClassNames} on-click={clickOutside}></div>
+        <div class={overlayClassNames} on-click={clickOutside} />
         <div
           class={contentClassNames}
           on-click={e => e.stopPropagation()}
