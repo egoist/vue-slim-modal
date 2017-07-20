@@ -27,6 +27,7 @@
   background-color: white;
   overflow: auto;
   z-index: 9999;
+  margin-bottom: 20px;
 }
 
 .modal.modal__center {
