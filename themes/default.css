@@ -6,6 +6,8 @@
   bottom: 0;
   z-index: 9990;
   overflow: auto;
+  background: black;
+  opacity: .4;
 }
 
 .modal {
@@ -14,10 +16,10 @@
   left: 50%;
   max-width: 80%;
   transform: translateX(-50%);
-  border: 1px solid #e2e2e2;
   padding: 10px;
   background-color: white;
   overflow: auto;
+  z-index: 9999;
 }
 
 .modal.modal__center {
