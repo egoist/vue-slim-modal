@@ -1,13 +1,20 @@
-.modal-overlay {
+.modal-overlay, .modal-wrapper {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.modal-overlay {
   z-index: 9990;
-  overflow: auto;
   background: black;
   opacity: .4;
+}
+
+.modal-wrapper {
+  z-index: 9999;
+  overflow: auto;
 }
 
 .modal {
