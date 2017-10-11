@@ -16,12 +16,23 @@ export default {
     },
     overlayClass: {
       type: String
+    },
+    isBodyScrollable: {
+      type: Boolean,
+      default: true
     }
   },
   render(h, ctx) {
-    const { isOpen, isCenter, clickOutside, overlayClass } = ctx.props
+    const { isOpen, isCenter, clickOutside, overlayClass, isBodyScrollable } = ctx.props
 
-    if (!isOpen) return
+    if (!isOpen) {
+      document.getElementsByTagName('body')[0].classList.remove('no-scroll')
+      return
+    } 
+    
+    if (!isBodyScrollable) {
+      document.getElementsByTagName('body')[0].classList.add('no-scroll')
+    }
 
     const contentClassNames = `modal${isCenter ? ' modal__center' : ''}`
 
